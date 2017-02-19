@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Photo" representedClassName=".Photo" syncable="YES">
+        <attribute name="wonderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Settings" representedClassName=".Settings" syncable="YES">
+        <attribute name="showNewWorldWonder" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showOldWorldWonder" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Sound" representedClassName=".Sound" syncable="YES">
+        <attribute name="wonderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderSoundTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderSoundUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName=".Video" syncable="YES">
+        <attribute name="wonderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderVideoUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Wonders" representedClassName=".Wonders" syncable="YES">
+        <attribute name="wonderLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wonderLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wonderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wonderShow" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wonderType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="-54" positionY="36" width="128" height="75"/>
+        <element name="Settings" positionX="0" positionY="72" width="128" height="75"/>
+        <element name="Sound" positionX="-36" positionY="45" width="128" height="90"/>
+        <element name="Video" positionX="-18" positionY="63" width="128" height="75"/>
+        <element name="Wonders" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>

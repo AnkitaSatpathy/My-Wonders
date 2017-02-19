@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC9CD3D91E54A9EE002F0070 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3D81E54A9EE002F0070 /* PhotosTableViewController.swift */; };
+		BC9CD3DB1E556836002F0070 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3DA1E556836002F0070 /* PhotoCell.swift */; };
+		BCC4A4581E51975000C64823 /* ViewWonderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4A4571E51975000C64823 /* ViewWonderViewController.swift */; };
+		BCC4A45A1E51BA7900C64823 /* EditWonderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4A4591E51BA7900C64823 /* EditWonderViewController.swift */; };
+		BCC4A45D1E51CADA00C64823 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4A45C1E51CADA00C64823 /* CoreLocation.framework */; };
+		BCC4A45F1E51CAE100C64823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC4A45E1E51CAE100C64823 /* MapKit.framework */; };
+		BCC4A4611E53417700C64823 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4A4601E53417700C64823 /* PhotosViewController.swift */; };
+		BCC921001E4C6993005D90BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC920FF1E4C6993005D90BD /* AppDelegate.swift */; };
+		BCC921051E4C6993005D90BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC921031E4C6993005D90BD /* Main.storyboard */; };
+		BCC921081E4C6993005D90BD /* MyWonders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCC921061E4C6993005D90BD /* MyWonders.xcdatamodeld */; };
+		BCC9210A1E4C6993005D90BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC921091E4C6993005D90BD /* Assets.xcassets */; };
+		BCC9210D1E4C6993005D90BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC9210B1E4C6993005D90BD /* LaunchScreen.storyboard */; };
+		BCC921151E4C6DEB005D90BD /* WhereAmIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC921141E4C6DEB005D90BD /* WhereAmIViewController.swift */; };
+		BCC921171E4C6E0A005D90BD /* WondersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC921161E4C6E0A005D90BD /* WondersViewController.swift */; };
+		BCC921191E4C6E28005D90BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC921181E4C6E28005D90BD /* SettingsViewController.swift */; };
+		BCF107B01E5615AF00809ADD /* EditPhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF107AF1E5615AF00809ADD /* EditPhotoTableViewController.swift */; };
+		BCF8BF581E5159750008FBAD /* Wonders+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF4E1E5159750008FBAD /* Wonders+CoreDataClass.swift */; };
+		BCF8BF591E5159750008FBAD /* Wonders+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF4F1E5159750008FBAD /* Wonders+CoreDataProperties.swift */; };
+		BCF8BF5A1E5159750008FBAD /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF501E5159750008FBAD /* Video+CoreDataClass.swift */; };
+		BCF8BF5B1E5159750008FBAD /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF511E5159750008FBAD /* Video+CoreDataProperties.swift */; };
+		BCF8BF5C1E5159750008FBAD /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF521E5159750008FBAD /* Photo+CoreDataClass.swift */; };
+		BCF8BF5D1E5159750008FBAD /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF531E5159750008FBAD /* Photo+CoreDataProperties.swift */; };
+		BCF8BF5E1E5159750008FBAD /* Settings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF541E5159750008FBAD /* Settings+CoreDataClass.swift */; };
+		BCF8BF5F1E5159750008FBAD /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF551E5159750008FBAD /* Settings+CoreDataProperties.swift */; };
+		BCF8BF601E5159750008FBAD /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF561E5159750008FBAD /* Sound+CoreDataClass.swift */; };
+		BCF8BF611E5159750008FBAD /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF571E5159750008FBAD /* Sound+CoreDataProperties.swift */; };
+		BCF8BF631E5176E90008FBAD /* AddWonderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8BF621E5176E90008FBAD /* AddWonderViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC9CD3D81E54A9EE002F0070 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
+		BC9CD3DA1E556836002F0070 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		BCC4A4571E51975000C64823 /* ViewWonderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWonderViewController.swift; sourceTree = "<group>"; };
+		BCC4A4591E51BA7900C64823 /* EditWonderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWonderViewController.swift; sourceTree = "<group>"; };
+		BCC4A45C1E51CADA00C64823 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BCC4A45E1E51CAE100C64823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BCC4A4601E53417700C64823 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		BCC920FC1E4C6993005D90BD /* MyWonders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWonders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC920FF1E4C6993005D90BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCC921041E4C6993005D90BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC921071E4C6993005D90BD /* MyWonders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWonders.xcdatamodel; sourceTree = "<group>"; };
+		BCC921091E4C6993005D90BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC9210C1E4C6993005D90BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC9210E1E4C6993005D90BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC921141E4C6DEB005D90BD /* WhereAmIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereAmIViewController.swift; sourceTree = "<group>"; };
+		BCC921161E4C6E0A005D90BD /* WondersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WondersViewController.swift; sourceTree = "<group>"; };
+		BCC921181E4C6E28005D90BD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BCC921421E4C93BF005D90BD /* MyWonders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyWonders-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCF107AF1E5615AF00809ADD /* EditPhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditPhotoTableViewController.swift; path = ../EditPhotoTableViewController.swift; sourceTree = "<group>"; };
+		BCF8BF4E1E5159750008FBAD /* Wonders+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wonders+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCF8BF4F1E5159750008FBAD /* Wonders+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wonders+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCF8BF501E5159750008FBAD /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCF8BF511E5159750008FBAD /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCF8BF521E5159750008FBAD /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCF8BF531E5159750008FBAD /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCF8BF541E5159750008FBAD /* Settings+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCF8BF551E5159750008FBAD /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCF8BF561E5159750008FBAD /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCF8BF571E5159750008FBAD /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCF8BF621E5176E90008FBAD /* AddWonderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWonderViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC920F91E4C6993005D90BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC4A45F1E51CAE100C64823 /* MapKit.framework in Frameworks */,
+				BCC4A45D1E51CADA00C64823 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC4A45B1E51CADA00C64823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC4A45E1E51CAE100C64823 /* MapKit.framework */,
+				BCC4A45C1E51CADA00C64823 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCC920F31E4C6992005D90BD = {
+			isa = PBXGroup;
+			children = (
+				BCF107B11E56F85300809ADD /* Coredata */,
+				BCC920FE1E4C6993005D90BD /* MyWonders */,
+				BCC920FD1E4C6993005D90BD /* Products */,
+				BCC921421E4C93BF005D90BD /* MyWonders-Bridging-Header.h */,
+				BCC4A45B1E51CADA00C64823 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC920FD1E4C6993005D90BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC920FC1E4C6993005D90BD /* MyWonders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC920FE1E4C6993005D90BD /* MyWonders */ = {
+			isa = PBXGroup;
+			children = (
+				BCC920FF1E4C6993005D90BD /* AppDelegate.swift */,
+				BCC921141E4C6DEB005D90BD /* WhereAmIViewController.swift */,
+				BCC921161E4C6E0A005D90BD /* WondersViewController.swift */,
+				BCC921181E4C6E28005D90BD /* SettingsViewController.swift */,
+				BCC4A4571E51975000C64823 /* ViewWonderViewController.swift */,
+				BCF107AF1E5615AF00809ADD /* EditPhotoTableViewController.swift */,
+				BCF8BF621E5176E90008FBAD /* AddWonderViewController.swift */,
+				BCC4A4591E51BA7900C64823 /* EditWonderViewController.swift */,
+				BC9CD3D81E54A9EE002F0070 /* PhotosTableViewController.swift */,
+				BC9CD3DA1E556836002F0070 /* PhotoCell.swift */,
+				BCC4A4601E53417700C64823 /* PhotosViewController.swift */,
+				BCC921031E4C6993005D90BD /* Main.storyboard */,
+				BCC921091E4C6993005D90BD /* Assets.xcassets */,
+				BCC9210B1E4C6993005D90BD /* LaunchScreen.storyboard */,
+				BCC921061E4C6993005D90BD /* MyWonders.xcdatamodeld */,
+				BCC9210E1E4C6993005D90BD /* Info.plist */,
+			);
+			path = MyWonders;
+			sourceTree = "<group>";
+		};
+		BCF107B11E56F85300809ADD /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8BF561E5159750008FBAD /* Sound+CoreDataClass.swift */,
+				BCF8BF4E1E5159750008FBAD /* Wonders+CoreDataClass.swift */,
+				BCF8BF4F1E5159750008FBAD /* Wonders+CoreDataProperties.swift */,
+				BCF8BF501E5159750008FBAD /* Video+CoreDataClass.swift */,
+				BCF8BF511E5159750008FBAD /* Video+CoreDataProperties.swift */,
+				BCF8BF521E5159750008FBAD /* Photo+CoreDataClass.swift */,
+				BCF8BF531E5159750008FBAD /* Photo+CoreDataProperties.swift */,
+				BCF8BF541E5159750008FBAD /* Settings+CoreDataClass.swift */,
+				BCF8BF551E5159750008FBAD /* Settings+CoreDataProperties.swift */,
+				BCF8BF571E5159750008FBAD /* Sound+CoreDataProperties.swift */,
+			);
+			name = Coredata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC920FB1E4C6993005D90BD /* MyWonders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC921111E4C6993005D90BD /* Build configuration list for PBXNativeTarget "MyWonders" */;
+			buildPhases = (
+				BCC920F81E4C6993005D90BD /* Sources */,
+				BCC920F91E4C6993005D90BD /* Frameworks */,
+				BCC920FA1E4C6993005D90BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWonders;
+			productName = MyWonders;
+			productReference = BCC920FC1E4C6993005D90BD /* MyWonders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC920F41E4C6992005D90BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ankita Satpathy";
+				TargetAttributes = {
+					BCC920FB1E4C6993005D90BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E3M6HYAQS9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCC920F71E4C6992005D90BD /* Build configuration list for PBXProject "MyWonders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC920F31E4C6992005D90BD;
+			productRefGroup = BCC920FD1E4C6993005D90BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC920FB1E4C6993005D90BD /* MyWonders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC920FA1E4C6993005D90BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC9210D1E4C6993005D90BD /* LaunchScreen.storyboard in Resources */,
+				BCC9210A1E4C6993005D90BD /* Assets.xcassets in Resources */,
+				BCC921051E4C6993005D90BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC920F81E4C6993005D90BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF8BF591E5159750008FBAD /* Wonders+CoreDataProperties.swift in Sources */,
+				BCF8BF5C1E5159750008FBAD /* Photo+CoreDataClass.swift in Sources */,
+				BCF8BF5A1E5159750008FBAD /* Video+CoreDataClass.swift in Sources */,
+				BCF8BF5E1E5159750008FBAD /* Settings+CoreDataClass.swift in Sources */,
+				BCC921171E4C6E0A005D90BD /* WondersViewController.swift in Sources */,
+				BCF8BF601E5159750008FBAD /* Sound+CoreDataClass.swift in Sources */,
+				BCC921151E4C6DEB005D90BD /* WhereAmIViewController.swift in Sources */,
+				BCC921081E4C6993005D90BD /* MyWonders.xcdatamodeld in Sources */,
+				BCF8BF631E5176E90008FBAD /* AddWonderViewController.swift in Sources */,
+				BCC4A4611E53417700C64823 /* PhotosViewController.swift in Sources */,
+				BCF8BF5D1E5159750008FBAD /* Photo+CoreDataProperties.swift in Sources */,
+				BCF8BF5F1E5159750008FBAD /* Settings+CoreDataProperties.swift in Sources */,
+				BCF8BF581E5159750008FBAD /* Wonders+CoreDataClass.swift in Sources */,
+				BCF8BF5B1E5159750008FBAD /* Video+CoreDataProperties.swift in Sources */,
+				BCF107B01E5615AF00809ADD /* EditPhotoTableViewController.swift in Sources */,
+				BCF8BF611E5159750008FBAD /* Sound+CoreDataProperties.swift in Sources */,
+				BCC921001E4C6993005D90BD /* AppDelegate.swift in Sources */,
+				BCC4A45A1E51BA7900C64823 /* EditWonderViewController.swift in Sources */,
+				BCC4A4581E51975000C64823 /* ViewWonderViewController.swift in Sources */,
+				BCC921191E4C6E28005D90BD /* SettingsViewController.swift in Sources */,
+				BC9CD3DB1E556836002F0070 /* PhotoCell.swift in Sources */,
+				BC9CD3D91E54A9EE002F0070 /* PhotosTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCC921031E4C6993005D90BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC921041E4C6993005D90BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC9210B1E4C6993005D90BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC9210C1E4C6993005D90BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC9210F1E4C6993005D90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC921101E4C6993005D90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC921121E4C6993005D90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = E3M6HYAQS9;
+				INFOPLIST_FILE = MyWonders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankita.MyWonders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyWonders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCC921131E4C6993005D90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = E3M6HYAQS9;
+				INFOPLIST_FILE = MyWonders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankita.MyWonders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyWonders-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC920F71E4C6992005D90BD /* Build configuration list for PBXProject "MyWonders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC9210F1E4C6993005D90BD /* Debug */,
+				BCC921101E4C6993005D90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC921111E4C6993005D90BD /* Build configuration list for PBXNativeTarget "MyWonders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC921121E4C6993005D90BD /* Debug */,
+				BCC921131E4C6993005D90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCC921061E4C6993005D90BD /* MyWonders.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCC921071E4C6993005D90BD /* MyWonders.xcdatamodel */,
+			);
+			currentVersion = BCC921071E4C6993005D90BD /* MyWonders.xcdatamodel */;
+			path = MyWonders.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BCC920F41E4C6992005D90BD /* Project object */;
+}
